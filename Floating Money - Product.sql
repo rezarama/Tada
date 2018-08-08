@@ -2,7 +2,7 @@ Select p."productType" as product, count(no) as tot_card, sum(balance) as tot_ba
   from "CardInventories" as c
 
   inner join "CardPrograms" as p
-    on c."programId" = p."programId"
+    on c."programId" = p."prograId"
   inner join "Merchants" as m
     on p."MerchantId" = m.id
 
